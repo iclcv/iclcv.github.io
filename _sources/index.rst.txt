@@ -55,7 +55,7 @@ Image Component Library (ICL)
 | |A| |B| |C| |D| |E| 
 | |F| |G| |H| |I| |J|
 
-Getting Startted
+Getting Started
 ****************
 
 | |ABOUT|     |DOWNLOAD|  |INSTALL|
