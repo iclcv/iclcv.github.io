@@ -153,7 +153,7 @@ var searchData=
   ['sqparams',['SQParams',['../structicl_1_1geom_1_1SQParams.html',1,'icl::geom']]],
   ['stacktimer',['StackTimer',['../classicl_1_1utils_1_1StackTimer.html',1,'icl::utils']]],
   ['stacktimernotifier',['StackTimerNotifier',['../classicl_1_1utils_1_1StackTimer_1_1StackTimerNotifier.html',1,'icl::utils::StackTimer']]],
-  ['state',['State',['../structicl_1_1qt_1_1State.html',1,'icl::qt::State'],['../structicl_1_1core_1_1AbstractCanvas_1_1State.html',1,'icl::core::AbstractCanvas::State']]],
+  ['state',['State',['../structicl_1_1core_1_1AbstractCanvas_1_1State.html',1,'icl::core::AbstractCanvas::State'],['../structicl_1_1qt_1_1State.html',1,'icl::qt::State']]],
   ['statehandle',['StateHandle',['../classicl_1_1qt_1_1StateHandle.html',1,'icl::qt']]],
   ['steppingrange',['SteppingRange',['../structicl_1_1utils_1_1SteppingRange.html',1,'icl::utils']]],
   ['stochasticoptimizer',['StochasticOptimizer',['../classicl_1_1math_1_1StochasticOptimizer.html',1,'icl::math']]],

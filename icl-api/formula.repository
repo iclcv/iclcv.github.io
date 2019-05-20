@@ -1,0 +1,216 @@
+\form#0:$x \in {2,3,4}$
+\form#1:$y \in {1,2,3,4}$
+\form#2:\[ D = \left(\sum\limits_{i,j} (A_{ij}-B_{ij})^n\right)^{\frac{1}{n}} \]
+\form#3:\[ \mbox{div} = \sum\limits_{i,j} A_{ij} \cdot \log{\frac{A_{ij}}{B_{ij}}} - A_{ij} + B_{ij} \]
+\form#4:$H$
+\form#5:$a_i$
+\form#6:$b_i$
+\form#7:$ \{a_i\} \;\;i \in [0,n[ $
+\form#8:$ \{b_i\} \;\;i \in [0,n[ $
+\form#9:\[ H a_i = b_i \;\;\; \forall i \in [0,n[ \]
+\form#10:\[ H A = B \]
+\form#11:\[ H (a_0 a_1 a_2 ... a_{n-1}) = (b_0 b_1 b_2 ... b_{n-1}) \]
+\form#12:\[ H = B A^{-1} \]
+\form#13:\[ H ( a_x a_y 1 )^T = (b_x b_y 1)^T \]
+\form#14:\[ \frac{X a}{L a} = b_x \;\;\;\;\;and\;\;\;\;\;\; \frac{Y a}{L a} = b_y \]
+\form#15:\[ \Leftrightarrow \frac{X a}{b_x} = La \;\;\;\;\;and\;\;\;\;\;\; \frac{Y a}{b_y} = La \]
+\form#16:\[ \Leftrightarrow \frac{X a}{b_x} - La = 0 \;\;\;\;\;and\;\;\;\;\;\; \frac{Y a}{b_y} - La = 0 \]
+\form#17:\[ \Leftrightarrow \frac{X a}{b_x} - L_x a_x - L_y a_y - 1 = 0 \;\;\;\;\;and\;\;\;\;\;\; \frac{Y a}{b_y} - L_x a_x - L_y a_y - 1 = 0 \]
+\form#18:\[ \Leftrightarrow \frac{X a}{b_x} - L_x a_x - L_y a_y = 1 \;\;\;\;\;and\;\;\;\;\;\; \frac{Y a}{b_y} - L_x a_x - L_y a_y = 1 \]
+\form#19:$ b_x $
+\form#20:$ b_y $
+\form#21:\[ \Leftrightarrow X a - L_x b_x a_x - L_y a_y b_x = b_x \;\;\;\;\;and\;\;\;\;\;\; Y a - L_x a_x b_y - L_y a_y b_y = b_y \]
+\form#22:$ M h = r $
+\form#23:$ h = (X^T Y^T L_x L_y)^T $
+\form#24:$(a_i,b_i)$
+\form#25:\[ M=\left(\begin{array}{cccccccc} a_x & a_y & 1 & 0 & 0 & 0 & -a_x b_x & -a_y b_x \\ 0 & 0 & 0 & a_x & a_y & 1 & -a_x b_y & -a_y b_y \\ ... \end{array}\right) \]
+\form#26:\[ r = ( b_x b_y ... )^T \]
+\form#27:\[ h = M^{-1} r \]
+\form#28:$ f : R^N \rightarrow R^O $
+\form#29:$ \beta_0 $
+\form#30:$ \{(x_i,y_i)\}$
+\form#31:$ f $
+\form#32:$ \beta $
+\form#33:\[ S(\beta) = \sum_{o=1}^O \sum_{i=1}^m [y_i[o] - f(x_i, \ \beta)[o] ]^2 \]
+\form#34:\[ f(x) = \beta_1 + \beta_2 x + \beta_3 x^2 + beta_4 x^3 \]
+\form#35:$ \partial f_o / \partial \beta_i$
+\form#36:$ x_i $
+\form#37:$ J_{oi} $
+\form#38:\[ f(x) = a + b*x + c*x^2 + d*x^3 \]
+\form#39:\[ ( 1, x, x^2, x^3 ) \]
+\form#40:$ \beta = (a,b,c,d,e,f) $
+\form#41:\[ f(x,y,z;\beta) = xyab + yzd^2c - zxfeb + (a + b + c + d)^2; \]
+\form#42:\[ \frac{\partial f}{\partial a} = xyb + 2 (a + b + c + d) \]
+\form#43:\[ \frac{\partial f}{\partial b} = xya - zxfe + 2 (a + b + c + d); \]
+\form#44:\[ \frac{\partial f}{\partial c} = yzd^2 + 2 (a + b + c + d)\]
+\form#45:\[ \frac{\partial f}{\partial d} = 2dyzc + 2 (a + b + c + d)\]
+\form#46:\[ \frac{\partial f}{\partial e} = -zxfb \]
+\form#47:\[ \frac{\partial f}{\partial f} = zxeb \]
+\form#48:\[ \vec{y}^{net}(x) = \sum\limits_{i=1}^N ( \vec{w}_i^{out}+A_i ( \vec{x}-\vec{w}_i^{in} ) ) \cdot g_i(\vec{x}) \]
+\form#49:$g_i(\vec{x})$
+\form#50:$ ( \vec{w}_i^{out}+A_i ( \vec{x}-\vec{w}_i^{in} ) ) $
+\form#51:$\vec{w}_i^{in}$
+\form#52:$\vec{w}_i^{out}$
+\form#53:$A_i$
+\form#54:\[ g_i(\vec{x}) = \frac{\exp(-\frac{\|\vec{x}-\vec{w}_i^{in}\|^2}{2\sigma_i^2})} {\sum\limits_{j=1}^N \exp(-\frac{\|\vec{x}-\vec{w}_j^{in}\|^2}{2\sigma_j^2})} \]
+\form#55:\[ \Delta \vec{w}_i^{in} = \epsilon_{in} \cdot ( \vec{x} - \vec{w}_i^{in} ) \cdot g_i(\vec{x}) \]
+\form#56:\[ \Delta \sigma^2 = \epsilon_{\sigma} \cdot ( \vec{x} - \vec{w}_i^{in} )^2 - \sigma^2 \cdot g_i(\vec{x}) \]
+\form#57:$(\vec{x}^{\alpha},\vec{y}^{\alpha})$
+\form#58:\[ \Delta \vec{w}_i^{out} = \epsilon_{out} \cdot g_i(\vec{x}^{\alpha}) \cdot (\vec{y}^{\alpha} - \vec{y}^{net}(\vec{x}^{\alpha}) ) + A_i \Delta \vec{w}_i^{in} \]
+\form#59:\[ \Delta A_i = \epsilon_A \cdot g_i(\vec{x}^{\alpha}) \cdot (\vec{y}^{\alpha} - \vec{y}^{net}(\vec{x}^{\alpha}) ) \cdot \frac{(\vec{x}^{\alpha} - \vec{w}_i^{in} )^{\tau}}{\|\vec{x}^{\alpha} - \vec{w}_i^{in}\|^2} \]
+\form#60:\[ f_X(x_1, \dots, x_N) = \frac {1} {(2\pi)^{N/2}|\Sigma|^{1/2}} \exp \left( -\frac{1}{2} ( x - \mu)^\top \Sigma^{-1} (x - \mu) \right) \]
+\form#61:$W=\{n_1,...,n_N\}$
+\form#62:$s$
+\form#63:$n_i$
+\form#64:$n_i.p$
+\form#65:$D$
+\form#66:$n_i.g$
+\form#67:$K$
+\form#68:$\epsilon$
+\form#69:$x$
+\form#70:\[ \forall r \in \{1,...,n\} \\ \Delta n_r.p = \epsilon \cdot h(n_r.g,h_s.g) \cdot (x-n_r.p) \]
+\form#71:$h$
+\form#72:\[ h(a,b) = e^{-\frac{(a-b)^2}{s\sigma^2}} \]
+\form#73:$\{40,40\}$
+\form#74:$[-1,1]^{dataDim}$
+\form#75:$\{(-1,1),(-1,1),...\}$
+\form#76:$h(a,b)$
+\form#77:\[ L(x) = \vec{o} + x\vec{v} \]
+\form#78:\[ f(x) = ax^2 + bx + c \]
+\form#79:$ O(number\,of\,white\,pixels^2)$
+\form#80:$A=\{a_1,...,a_n\}$
+\form#81:$B=\{b_1,...,b_m\}$
+\form#82:\[ H(A,B) := max ( h(A,B), b(B,A) ) \]
+\form#83:\[ h(A,B) := \max\limits_{a_i \in A} \min\limits_{b_j \in B} || a - b || \]
+\form#84:$ || . || $
+\form#85:$H(A,B)$
+\form#86:$I(x,y)$
+\form#87:$h(A,B) := \max\limits_{a_i \in A} \min\limits_{b_j \in B} || a - b || $
+\form#88:$h(A,B) := < \min\limits_{b_j \in B} || a - b || >_{a_i \in A} $
+\form#89:\[ g(x,y;\lambda,\theta,\psi,\sigma,\gamma)=\exp(-\frac{x'^2+\gamma^2y'^2}{2\sigma^2})\cos(2\pi\frac{x'}{\lambda}+\psi) \]
+\form#90:\[ x' = x \cos\theta + y \sin\theta\, \]
+\form#91:\[ y' = -x \sin\theta + y \cos\theta\, \]
+\form#92:$\lambda$
+\form#93:$\theta$
+\form#94:$\psi$
+\form#95:$\gamma$
+\form#96:$\theta=0$
+\form#97:$\frac{\pi}{2}$
+\form#98:$\sigma$
+\form#99:$\lambda=5$
+\form#100:$\psi=0$
+\form#101:$\gamma=1$
+\form#102:$\theta=1$
+\form#103:$\sigma=100$
+\form#104:$\theta=2$
+\form#105:$\sigma=200$
+\form#106:$ I=\sqrt(gx^2+gy^2) $
+\form#107:$ I=atan2(gy,gx) $
+\form#108:\[ A(i,j) = \sum\limits_{x=0}^i \sum\limits_{y=0}^j a(i,j) \]
+\form#109:\[ A(i,j) = a(i,j)+A(i-1,j)+A(i,j-1)-A(i-1,j-1) \]
+\form#110:\[ A(i,j) = \sum\limits_{x=0}^{i-1} \sum\limits_{y=0}^{j-1} a(i,j) \]
+\form#111:\[X = D - A - B + C\]
+\form#112:\[P = (A.x-C.x) * (B.y-C.y) \]
+\form#113:$X/P$
+\form#114:$p=(px,py)$
+\form#115:$\mu_p$
+\form#116:$p$
+\form#117:$r$
+\form#118:$\mu_r{p}$
+\form#119:$g$
+\form#120:$ d(x,y) = 255 * (i(x,y) > (M+g) ) $
+\form#121:$range := maxVal - minVal$
+\form#122:\[ LUTIDX_{naiv}(x,y) = x-minVal + range \cdot (y-minVal) \]
+\form#123:\[ lut -= (range+1)*minVal; \]
+\form#124:\[ LUTIDX_{optimized}(x,y) = x + range\cdot y \]
+\form#125:\[ f:R^3~\rightarrow~R \]
+\form#126:$2^{24} \mbox{bytes} = 16.8\mbox{MB}$
+\form#127:$2^{21} \mbox{bytes} = 2.1\mbox{MB}$
+\form#128:$2^{18} \mbox{bytes}=262\mbox{kB}$
+\form#129:\[ D(x,y,c) = S(x,y,c)*w(c) \]
+\form#130:$S$
+\form#131:$w$
+\form#132:$C$
+\form#133:\[ D(x,y,0) = \sum\limits_{c=0}^C S(x,y,c)*w(c) \]
+\form#134:\[ R(x,y,c) = \mu_m(x,y,c) + \frac{\sigma_m^2(x,y,c)-\nu^2}{\sigma^2} * (S(x,y,c) - \mu_m(x,y,c)) \]
+\form#135:$R(x,y,c)$
+\form#136:$\mu_m(x,y,c)$
+\form#137:$\sigma^2_m(x,y,c)$
+\form#138:$\sigma^2 $
+\form#139:$S(x,y,c)$
+\form#140:$P_1(x)$
+\form#141:$P_2(x)$
+\form#142:\[ BinaryMap(x,y) = \bigvee\limits_{channels\;\; c} ProximityMap(x,y,c) > significance*255 \]
+\form#143:\[ l: \vec{o}+\lambda \vec{d} \]
+\form#144:$\alpha $
+\form#145:\[ x \cos(\alpha) + y \sin(\alpha) - r = 0 \]
+\form#146:$ (\cos(\alpha), \sin(\alpha) )^{\tau} $
+\form#147:\[ \vec{o} = r * ( \cos(\alpha) \sin(\alpha) )^{\tau} \]
+\form#148:\[ \vec{d} = ( -\sin(\alpha) \cos(\alpha) ]^{\tau} \]
+\form#149:\[ g_1: \vec{o}_1+ \lambda_1 * \vec{d}_1 \]
+\form#150:$\alpha$
+\form#151:\[ g_2: \vec{o}_2+ \lambda_2 * \vec{d}_2 \]
+\form#152:$\beta$
+\form#153:\[ g1 = g2 \]
+\form#154:\[ \lambda_1\cdot -\sin(\alpha) + \lambda_2 \cdot \sin(\beta) = s\cos(\beta) - r\cos(\alpha) \]
+\form#155:\[ \lambda_1\cdot \cos(\alpha) + \lambda_2 \cdot -\cos(\beta) = s\sin(\beta) - r\sin(\alpha) \]
+\form#156:\[ Mx = b \]
+\form#157:\[ M = \left( \begin{array}{cc} -\sin(\alpha) & \sin(\beta) \\ \cos(\alpha) & -\cos(\beta) \\ \end{array} \right) \]
+\form#158:\[ B = \left( \begin{array}{c} s\cos(\beta) - r\cos(\alpha) \\ s\sin(\beta) - r\sin(\alpha) \\ \end{array} \right) \]
+\form#159:\[ x = (\lambda_1, \lambda_2)^{\tau} \]
+\form#160:$ Mx=b $
+\form#161:$x=M^{-1}b$
+\form#162:$M$
+\form#163:$r = x\cdot cos(rho) + y\cdot sin(rho)$
+\form#164:$N$
+\form#165:$w_i$
+\form#166:$t_j$
+\form#167:$d_{ij}$
+\form#168:$D=\{d_{ij}\}$
+\form#169:\[P_n = \frac{\sum_{A_h}k(A_h-P_o)w(A_h)P_o}{\sum_{A_h} | k(A_h-P_o) w(A_h)|} \]
+\form#170:$P_n $
+\form#171:$P_o $
+\form#172:$k() $
+\form#173:$w() $
+\form#174:$A_h $
+\form#175:$A$
+\form#176:$n^2$
+\form#177:$n^3$
+\form#178:\[\{R_i | i \in \{1,N\} \}\]
+\form#179:\[R_i=(\mbox{RC}_i,\mbox{T}_i,\mbox{S}_i,\mbox{RD}_i, \mbox{BUF}_i)\]
+\form#180:$I$
+\form#181:$\mbox{BUF}_i$
+\form#182:$ \mbox{BUF}_i \leftarrow 255 * ( |I(x,y)-\mbox{RC}_i| < T_i )$
+\form#183:$i = i .. N$
+\form#184:$\mbox{Regions}_i \leftarrow \mbox{RD}_i.detect(\mbox{BUF}_i)$
+\form#185:$r_j \in \mbox{Regions}_i$
+\form#186:$r_j$
+\form#187:$RC_i$
+\form#188:\[ d(a,b) = \sqrt{ \sum\limits_{i=1}^D \left( \frac{a_i - b_i}{\sigma_i}\right)^2 } \]
+\form#189:\[ d(a,b) = \sqrt[4]{ \sum\limits_{i=1}^D \left( \frac{a_i - b_i}{\sigma_i}\right)^2 } \]
+\form#190:$\sigma_i$
+\form#191:\[ P = \left(\begin{array}{cccc} fm_x & s & p_x & 0 \\ 0 & f m_y & p_y & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0 \end{array}\right) \]
+\form#192:\[ C = \left(\begin{array}{cc} h^T & -h^T p \\ u^T & -u^T p \\ n^T & -n^T p \\ (0,0,0) & 1 \\ \end{array}\right) \]
+\form#193:\[ p_s' = homogenize(P C p_w) \]
+\form#194:\[ u = \frac{fm_x C_1 x + s C_2 x + p_x C_3 x}{C_3 x} \]
+\form#195:\[ v = \frac{fm_y C_2 x + p_y C_3 x}{C_3 x} \]
+\form#196:\[ fm_x C_1 x + s C_2 x + (p_x - u) C_3 x = 0 \]
+\form#197:\[ fm_y C_2 x + (p_y - v) C_3 x = 0 \]
+\form#198:\[ P = \left(\begin{array}{cccccccccccc} fm_x x & fm_x y & fm_z x & fm_x & s x & s y & s z & s & d_u x & d_u y & d_u z & d_u \\ 0 & 0 & 0 & 0 & fm_y x & fm_y y & fm_y x & fm_y & d_v x & d_v y & d_v z & d_v \\ ... \end{array}\right) ( C_1 C_2 C_3 )^T \]
+\form#199:$V: \mbox{offset} + \lambda \cdot \mbox{direction} $
+\form#200:$ P: < (X - \mbox{planeOffset}), \mbox{planeNormal}> = 0 $
+\form#201:$<(\mbox{offset} + \lambda \cdot \mbox{direction}) - \mbox{planeOffset},planeNormal> = 0$
+\form#202:\[ \lambda = - \frac{<\mbox{offset}-\mbox{planeOffset},\mbox{planeNormal}>}{<\mbox{direction},\mbox{planeNormal}>} \]
+\form#203:\[ V: \mbox{offset} + \lambda \cdot \mbox{direction} \]
+\form#204:$n_0 \leq n_1 \leq n2 \leq n_3 $
+\form#205:$ n_0 < n_3 $
+\form#206:\[ id(n_1,n_2,n_3,n_4) = (+1 or -1)(n_1 + 6 n_2 + 36 n_3 + 216 n_4) \]
+\form#207:\[ compute\_ni(id) = \]
+\form#208:\[ id = abs(id) \]
+\form#209:\[ n_4 = min(5,id/216) \]
+\form#210:\[ id -= n_4*216 \]
+\form#211:\[ n_3 = min(5,id/36) \]
+\form#212:\[ id -= n_3*36; \]
+\form#213:\[ n_2 = min(5,id/6) \]
+\form#214:\[ id -= n_2*6 \]
+\form#215:\[ n_1 = id; \]

@@ -616,12 +616,12 @@ of bits used, and a suffix</p>
 </ul>
 <p>The most common types are</p>
 <ul class="simple">
-<li><p><a class="reference external" href="../icl-api/group__BASIC__TYPES.html#ga03c5fb8fe5763e6a400b4651b0eec2d7">icl8u</a> for 8 bit unsigned integers (commonly known as <strong>unsigned
+<li><p><a class="reference external" href="../icl-api/namespaceicl.html#a03c5fb8fe5763e6a400b4651b0eec2d7">icl8u</a> for 8 bit unsigned integers (commonly known as <strong>unsigned
 char</strong>)</p></li>
-<li><p><a class="reference external" href="../icl-api/group__BASIC__TYPES.html#ga79af5b84ad2c6e4acf44ae0530d89269">icl16s</a> for 16 bit signed integers (commonly known as <strong>short</strong>)</p></li>
-<li><p><a class="reference external" href="../icl-api/group__BASIC__TYPES.html#ga42327266b9cc89a04bb7cf0ff1b1b0b2">icl32s</a> for 32 bit signed integers (usually <strong>int</strong>)</p></li>
-<li><p><a class="reference external" href="../icl-api/group__BASIC__TYPES.html#ga9d5e66277c0b9e4cee1d9e0f51768f49">icl32f</a> for floats</p></li>
-<li><p><a class="reference external" href="../icl-api/group__BASIC__TYPES.html#gab21f404160d56751f53c4b12618acb26">icl64f</a> for doubles</p></li>
+<li><p><a class="reference external" href="../icl-api/namespaceicl.html#a79af5b84ad2c6e4acf44ae0530d89269">icl16s</a> for 16 bit signed integers (commonly known as <strong>short</strong>)</p></li>
+<li><p><a class="reference external" href="../icl-api/namespaceicl.html#a42327266b9cc89a04bb7cf0ff1b1b0b2">icl32s</a> for 32 bit signed integers (usually <strong>int</strong>)</p></li>
+<li><p><a class="reference external" href="../icl-api/namespaceicl.html#a9d5e66277c0b9e4cee1d9e0f51768f49">icl32f</a> for floats</p></li>
+<li><p><a class="reference external" href="../icl-api/namespaceicl.html#ab21f404160d56751f53c4b12618acb26">icl64f</a> for doubles</p></li>
 </ul>
 <p>ICL’s <a class="reference internal" href="core.html#core-image"><span class="std std-ref">image classes</span></a> (provided by the
 <a class="reference internal" href="core.html#core"><span class="std std-ref">ICLCore</span></a> module) are implemented for these common types
@@ -704,7 +704,7 @@ arguments</p></li>
 human-readable error messages</p></li>
 <li><p>an automatically supported set of common default program
 arguments, such as <strong>-version</strong> or <strong>-help</strong></p></li>
-<li><p>a concise method <a class="reference external" href="../icl-api/group__PA.html#gac1c1a1e771ecc0681b8f277040cc2c99">pa</a> that can be use to query whether
+<li><p>a concise method <a class="reference external" href="../icl-api/namespaceicl_1_1utils.html#ac1c1a1e771ecc0681b8f277040cc2c99">pa</a> that can be use to query whether
 a specific program argument has been given and what it’s sub
 arguments where</p></li>
 </ul>
@@ -803,7 +803,7 @@ of the tutorial (see <a class="reference internal" href="../tutorials/config-fil
 </div>
 <div class="section" id="string-manipulation">
 <span id="utils-string"></span><h2>String Manipulation<a class="headerlink" href="#string-manipulation" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="../icl-api/group__STRUTILS.html#ga2d5b026efe9b2f895c42bd124a2d3786">str</a> and <a class="reference external" href="../icl-api/group__STRUTILS.html#gacf625b3751a1fef84be84459fc3f7c15">parse</a></p>
+<p><a class="reference external" href="../icl-api/namespaceicl_1_1utils.html#a2d5b026efe9b2f895c42bd124a2d3786">str</a> and <a class="reference external" href="../icl-api/namespaceicl_1_1utils.html#a2df21a9e3eaa5f045c2e3cc06bb79524">parse</a></p>
 <blockquote>
 <div><p>Since C++’s support for string manipulation is a bit weak, ICL
 supports a set of support functions for intuitive and easy-to use
@@ -815,11 +815,11 @@ string manipulation. Most important are the two function templates:</p>
 <span class="n">T</span> <span class="n">parse</span><span class="p">(</span><span class="n">const</span> <span class="n">std</span><span class="p">::</span><span class="n">string</span> <span class="o">&amp;</span><span class="n">text</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>where <a class="reference external" href="../icl-api/group__STRUTILS.html#ga2d5b026efe9b2f895c42bd124a2d3786">str</a> converts a type instance into a string, and <a class="reference external" href="../icl-api/group__STRUTILS.html#gacf625b3751a1fef84be84459fc3f7c15">parse</a>
+<p>where <a class="reference external" href="../icl-api/namespaceicl_1_1utils.html#a2d5b026efe9b2f895c42bd124a2d3786">str</a> converts a type instance into a string, and <a class="reference external" href="../icl-api/namespaceicl_1_1utils.html#a2df21a9e3eaa5f045c2e3cc06bb79524">parse</a>
 converts a string into a type instance. Internally, these functions
 make use of the in- and output stream-operators (<strong>&lt;&lt;</strong> and <strong>&gt;&gt;</strong>).
-Therefore, <a class="reference external" href="../icl-api/group__STRUTILS.html#ga2d5b026efe9b2f895c42bd124a2d3786">str</a> is automatically supported for each type that
-supports the <strong>std::ostream</strong>-operator and <a class="reference external" href="../icl-api/group__STRUTILS.html#gacf625b3751a1fef84be84459fc3f7c15">parse</a> for each type
+Therefore, <a class="reference external" href="../icl-api/namespaceicl_1_1utils.html#a2d5b026efe9b2f895c42bd124a2d3786">str</a> is automatically supported for each type that
+supports the <strong>std::ostream</strong>-operator and <a class="reference external" href="../icl-api/namespaceicl_1_1utils.html#a2df21a9e3eaa5f045c2e3cc06bb79524">parse</a> for each type
 that supports the <strong>std::istream</strong>-operator. For most of the common
 ICL-types, this is true.</p>
 </div></blockquote>
@@ -830,8 +830,8 @@ ICL-types, this is true.</p>
 object. <a class="reference external" href="../icl-api/structicl_1_1utils_1_1Any.html">Any</a> is derived from the <strong>std::string</strong>, and extends
 it’s functionality by easy to use serialization and de-serialization
 functions. An <a class="reference external" href="../icl-api/structicl_1_1utils_1_1Any.html">Any</a> instance can be created from every type that
-is supported by the <a class="reference external" href="../icl-api/group__STRUTILS.html#ga2d5b026efe9b2f895c42bd124a2d3786">str</a>-template (see above). And it can be
-converted to any type that is supported by the <a class="reference external" href="../icl-api/group__STRUTILS.html#gacf625b3751a1fef84be84459fc3f7c15">parse</a>-template</p>
+is supported by the <a class="reference external" href="../icl-api/namespaceicl_1_1utils.html#a2d5b026efe9b2f895c42bd124a2d3786">str</a>-template (see above). And it can be
+converted to any type that is supported by the <a class="reference external" href="../icl-api/namespaceicl_1_1utils.html#a2df21a9e3eaa5f045c2e3cc06bb79524">parse</a>-template</p>
 <div class="highlight-c++ notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -926,18 +926,18 @@ converted to any type that is supported by the <a class="reference external" hre
 </pre></div>
 </td></tr></table></div>
 </div></blockquote>
-<p><a class="reference external" href="../icl-api/group__STRUTILS.html#gad441f647a7e4f47e6789d5f5a382dceb">tok</a> and <a class="reference external" href="../icl-api/group__STRUTILS.html#gacc1429a32f96ec90c4569b243d7a2020">cat</a></p>
+<p><a class="reference external" href="../icl-api/namespaceicl_1_1utils.html#ad441f647a7e4f47e6789d5f5a382dceb">tok</a> and <a class="reference external" href="../icl-api/namespaceicl_1_1utils.html#acc1429a32f96ec90c4569b243d7a2020">cat</a></p>
 <blockquote>
 <div><p>The two support functions are used for tokenization and concatination
-of string. <a class="reference external" href="../icl-api/group__STRUTILS.html#gad441f647a7e4f47e6789d5f5a382dceb">tok</a> can tokenize strings an std::vector&lt;string&gt; tokens.
+of string. <a class="reference external" href="../icl-api/namespaceicl_1_1utils.html#ad441f647a7e4f47e6789d5f5a382dceb">tok</a> can tokenize strings an std::vector&lt;string&gt; tokens.
 It can either use a set of single allowed <strong>char</strong>-delimiters, or
 a delimiting <strong>std::string</strong>. Furthermore, an escape-character can
 be defined for also being able to use the delimiting characters.</p>
-<p>The opposite of <a class="reference external" href="../icl-api/group__STRUTILS.html#gad441f647a7e4f47e6789d5f5a382dceb">tok</a> is <a class="reference external" href="../icl-api/group__STRUTILS.html#gacc1429a32f96ec90c4569b243d7a2020">cat</a>, which concatenate the elements
+<p>The opposite of <a class="reference external" href="../icl-api/namespaceicl_1_1utils.html#ad441f647a7e4f47e6789d5f5a382dceb">tok</a> is <a class="reference external" href="../icl-api/namespaceicl_1_1utils.html#acc1429a32f96ec90c4569b243d7a2020">cat</a>, which concatenate the elements
 of an <strong>std::vector&lt;std::string&gt;</strong>. Optionally a delimiter can be
 inserted between the elements here.</p>
 </div></blockquote>
-<p><a class="reference external" href="../icl-api/group__STRUTILS.html#gaac982322467e18245362b025410d8654">match</a></p>
+<p><a class="reference external" href="../icl-api/namespaceicl_1_1utils.html#aac982322467e18245362b025410d8654">match</a></p>
 <blockquote>
 <div><p>Is a regular expression matching function. It also supports accessing
 sub-matches.</p>
@@ -946,7 +946,7 @@ sub-matches.</p>
 <div class="section" id="the-generic-function-class">
 <span id="utils-function"></span><h2>The Generic Function Class<a class="headerlink" href="#the-generic-function-class" title="Permalink to this headline">¶</a></h2>
 <p>The <a class="reference external" href="../icl-api/structicl_1_1utils_1_1Function.html">Function</a> class and it’s heavily overloaded creator
-function <a class="reference external" href="../icl-api/group__FUNCTION.html#ga0f166bfffc5737cd30db1ae4eed4f48e">function</a>, is a simplification of the well known
+function <a class="reference external" href="../icl-api/namespaceicl_1_1utils.html#a0f166bfffc5737cd30db1ae4eed4f48e">function</a>, is a simplification of the well known
 <strong>boost::function</strong> type.  The <a class="reference external" href="../icl-api/structicl_1_1utils_1_1Function.html">Function</a> defines a generic
 interface for</p>
 <ul class="simple">
@@ -1185,8 +1185,8 @@ interface for</p>
 C++, ICL provides some extra functions and classes here. In particular
 creation of Gaussian distributed random numbers usually requires some
 extra work. In addition to the normal random number generation
-functions <a class="reference external" href="../icl-api/group__RANDOM.html#ga720d47364065e33e3c8c6806bf101492">random(min,max)</a> and
-<a class="reference external" href="../icl-api/group__RANDOM.html#ga9cd5c572f28873aaaddd13692c099465">gaussRandom(mean,variance)</a>, few special <em>classes</em>
+functions <a class="reference external" href="../icl-api/namespaceicl_1_1utils.html#a720d47364065e33e3c8c6806bf101492">random(min,max)</a> and
+<a class="reference external" href="../icl-api/namespaceicl_1_1utils.html#a9cd5c572f28873aaaddd13692c099465">gaussRandom(mean,variance)</a>, few special <em>classes</em>
 are provided, that can be created with the random number generation
 properties, and that will draw a new random number, <em>whenever they are
 assigned to something</em>.</p>
@@ -1442,7 +1442,7 @@ arrays, <strong>ICL_DELETE_ARRAY(pointer)</strong> has to be used.</p>
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2006-2017, Christof Elbrechter, Michael Goetting, Robert Haschke.
+        &#169; Copyright 2006-2019, Christof Elbrechter, Michael Götting, Robert Haschke, Alexander Neumann.
       Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.0.1.
     </div>
   </body>

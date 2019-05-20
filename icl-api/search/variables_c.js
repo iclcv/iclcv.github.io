@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['l',['l',['../structicl_1_1geom_1_1ObjectEdgeDetectorData_1_1m__kernel.html#ae874966b7839b588da49d768cd33e028',1,'icl::geom::ObjectEdgeDetectorData::m_kernel::l()'],['../classicl_1_1geom_1_1SoftPosit.html#af6c1ff4cb8e8082a0a3614b2fc342d12',1,'icl::geom::SoftPosit::L()']]],
+  ['l',['L',['../classicl_1_1geom_1_1SoftPosit.html#af6c1ff4cb8e8082a0a3614b2fc342d12',1,'icl::geom::SoftPosit::L()'],['../structicl_1_1geom_1_1ObjectEdgeDetectorData_1_1m__kernel.html#ae874966b7839b588da49d768cd33e028',1,'icl::geom::ObjectEdgeDetectorData::m_kernel::l()']]],
   ['label',['label',['../structicl_1_1qt_1_1GUIComponent_1_1Options.html#ac732ef533b05618b53e6e6d318b6d39c',1,'icl::qt::GUIComponent::Options']]],
   ['lambdamultiplier',['lambdaMultiplier',['../classicl_1_1math_1_1LevenbergMarquardtFitter.html#ab8e823e224cdd6fbd4a644b854c40a8d',1,'icl::math::LevenbergMarquardtFitter']]],
   ['lambdas',['lambdas',['../structicl_1_1math_1_1LevenbergMarquardtFitter_1_1Result.html#a13c597c9109b58beac069193fb3738ca',1,'icl::math::LevenbergMarquardtFitter::Result']]],
@@ -16,7 +16,7 @@ var searchData=
   ['linecolorsfromvertices',['lineColorsFromVertices',['../structicl_1_1geom_1_1Primitive_1_1RenderContext.html#aa763becbacd1a89385cecc81af6dd304',1,'icl::geom::Primitive::RenderContext']]],
   ['linepen',['linePen',['../structicl_1_1qt_1_1AbstractPlotWidget_1_1Pen.html#a27d61e4bb2d98e21e59629af9ceae715',1,'icl::qt::AbstractPlotWidget::Pen']]],
   ['lines',['lines',['../classicl_1_1geom_1_1TwoSidedGridPrimitive.html#a5a312703fd238bf02ba22b589a54a7b1',1,'icl::geom::TwoSidedGridPrimitive::lines()'],['../structicl_1_1markers_1_1MarkerGridEvaluater.html#a949697839ba8388a7fca763a70be4829',1,'icl::markers::MarkerGridEvaluater::lines()'],['../classicl_1_1physics_1_1ManipulatablePaper.html#a28f4d18ea25f8c143a80bc52395ffab8',1,'icl::physics::ManipulatablePaper::lines()']]],
-  ['linewidth',['linewidth',['../structicl_1_1core_1_1AbstractCanvas_1_1State.html#a62185ba437af9c7e358ec2ebb847f2c7',1,'icl::core::AbstractCanvas::State::linewidth()'],['../classicl_1_1qt_1_1DefineRectanglesMouseHandler_1_1Options.html#a7392d08758eca5dca0ee34320b3fa4c2',1,'icl::qt::DefineRectanglesMouseHandler::Options::lineWidth()']]],
+  ['linewidth',['lineWidth',['../classicl_1_1qt_1_1DefineRectanglesMouseHandler_1_1Options.html#a7392d08758eca5dca0ee34320b3fa4c2',1,'icl::qt::DefineRectanglesMouseHandler::Options::lineWidth()'],['../structicl_1_1core_1_1AbstractCanvas_1_1State.html#a62185ba437af9c7e358ec2ebb847f2c7',1,'icl::core::AbstractCanvas::State::linewidth()']]],
   ['link',['link',['../structicl_1_1physics_1_1BendingConstraint.html#ae958bb352bf0bc307351e30cae503fdf',1,'icl::physics::BendingConstraint']]],
   ['linsolver',['linSolver',['../classicl_1_1math_1_1LevenbergMarquardtFitter.html#a6e1a6ebfe82dec62a1fd469526a5ccb0',1,'icl::math::LevenbergMarquardtFitter']]],
   ['ll',['ll',['../structicl_1_1markers_1_1AdvancedMarkerGridDetector_1_1Marker_1_1KeyPoints.html#a944dea2ff1208fc646ab4c076e080ba4',1,'icl::markers::AdvancedMarkerGridDetector::Marker::KeyPoints']]],

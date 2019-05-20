@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['utility_20classes_20and_20functions',['Utility classes and Functions',['../group__G__UTILS.html',1,'']]],
   ['u',['U',['../classicl_1_1geom_1_1SoftPosit.html#aec2f15989791a2d7d60663a2082fbfd2',1,'icl::geom::SoftPosit']]],
   ['u8euclideandistance',['U8EuclideanDistance',['../structicl_1_1cv_1_1RegionGrower_1_1U8EuclideanDistance.html',1,'icl::cv::RegionGrower::U8EuclideanDistance'],['../structicl_1_1cv_1_1RegionGrower_1_1U8EuclideanDistance.html#a2d2a6c32bddce3855079550448ed8446',1,'icl::cv::RegionGrower::U8EuclideanDistance::U8EuclideanDistance()']]],
   ['ud',['UD',['../classicl_1_1utils_1_1Size.html#a6b1d7e21bb16b26c42d13b34f3f2cafa',1,'icl::utils::Size']]],
@@ -55,7 +54,7 @@ var searchData=
   ['updateinfotab',['updateInfoTab',['../classicl_1_1qt_1_1ICLWidget.html#aca9ac10b17bb42c248a15e1f7a0eb450',1,'icl::qt::ICLWidget']]],
   ['updatekernels',['updateKernels',['../classicl_1_1filter_1_1GaborOp.html#ac845cfcbf1874537a79a464c9a423048',1,'icl::filter::GaborOp']]],
   ['updatelines',['updateLines',['../structicl_1_1markers_1_1MarkerGridEvaluater.html#aa2cf345d7b1345adf0df6f1786e91373',1,'icl::markers::MarkerGridEvaluater']]],
-  ['updatelinkpointer',['updateLinkPointer',['../structicl_1_1physics_1_1BendingConstraint.html#ab2d6ecd07ed3151e3badb50170909c0e',1,'icl::physics::BendingConstraint']]],
+  ['updatelinkpointer',['updateLinkPointer',['../structicl_1_1physics_1_1BendingConstraint.html#ac64cb8546f37e0a6114c0ac8e34ed3f6',1,'icl::physics::BendingConstraint']]],
   ['updatemb',['updateMB',['../classicl_1_1qt_1_1FSliderHandle.html#ae6651a1301113ff80a2985e763021454',1,'icl::qt::FSliderHandle']]],
   ['updatenodeareas',['updateNodeAreas',['../classicl_1_1physics_1_1PhysicsPaper3.html#a61746272b5cad49ec719d65784287869',1,'icl::physics::PhysicsPaper3::updateNodeAreas()'],['../classicl_1_1physics_1_1PhysicsPaper3.html#a61746272b5cad49ec719d65784287869',1,'icl::physics::PhysicsPaper3::updateNodeAreas()']]],
   ['updatepositions',['updatePositions',['../classicl_1_1geom_1_1SceneLight.html#a3466dd0bf17321c9d45578af3f127fb6',1,'icl::geom::SceneLight']]],

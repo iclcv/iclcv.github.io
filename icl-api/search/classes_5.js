@@ -100,7 +100,7 @@ var searchData=
   ['function_3c_20void_20_3e',['Function&lt; void &gt;',['../structicl_1_1utils_1_1Function.html',1,'icl::utils']]],
   ['function_3c_20void_2c_20const_20datapoint_20_26_2c_20t_20_2a_20_3e',['Function&lt; void, const DataPoint &amp;, T * &gt;',['../structicl_1_1utils_1_1Function.html',1,'icl::utils']]],
   ['function_3c_20void_2c_20const_20result_20_26_20_3e',['Function&lt; void, const Result &amp; &gt;',['../structicl_1_1utils_1_1Function.html',1,'icl::utils']]],
-  ['function_3c_20void_2c_20const_20std_3a_3astring_20_26_3e',['Function&lt; void, const std::string &amp;&gt;',['../structicl_1_1utils_1_1Function.html',1,'icl::utils']]],
+  ['function_3c_20void_2c_20const_20std_3a_3astring_20_26_20_3e',['Function&lt; void, const std::string &amp; &gt;',['../structicl_1_1utils_1_1Function.html',1,'icl::utils']]],
   ['function_3c_20void_2c_20const_20utils_3a_3apoint32f_20_26_2c_20double_20_2a_20_3e',['Function&lt; void, const utils::Point32f &amp;, double * &gt;',['../structicl_1_1utils_1_1Function.html',1,'icl::utils']]],
   ['function_3c_20void_2c_20icl_3a_3aphysics_3a_3aphysicsobject_20_2a_2c_20icl_3a_3aphysics_3a_3aphysicsobject_20_2a_2c_20icl_3a_3amath_3a_3afixedcolvector_20_3e',['Function&lt; void, icl::physics::PhysicsObject *, icl::physics::PhysicsObject *, icl::math::FixedColVector &gt;',['../structicl_1_1utils_1_1Function.html',1,'icl::utils']]],
   ['functionimpl',['FunctionImpl',['../structicl_1_1utils_1_1FunctionImpl.html',1,'icl::utils']]],

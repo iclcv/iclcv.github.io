@@ -1110,9 +1110,9 @@ applications developed. Therefore, we strongly recommend to use the
 type-checked assignment. For this, the <a class="reference external" href="../icl-api/classicl_1_1qt_1_1DataStore_1_1Data.html">qt::DataStore::Data</a>
 instance returned by the index operator provides template-based
 assignment and implicit cast operators:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">template</span><span class="o">&lt;</span><span class="k">class</span> <span class="nc">T</span><span class="o">&gt;</span> <span class="n">void</span> <span class="n">operator</span><span class="o">=</span><span class="p">(</span><span class="n">const</span> <span class="n">T</span> <span class="o">&amp;</span><span class="n">t</span><span class="p">)</span> <span class="n">throw</span> <span class="p">(</span><span class="n">UnassignableTypeException</span><span class="p">);</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">template</span><span class="o">&lt;</span><span class="k">class</span> <span class="nc">T</span><span class="o">&gt;</span> <span class="n">void</span> <span class="n">operator</span><span class="o">=</span><span class="p">(</span><span class="n">const</span> <span class="n">T</span> <span class="o">&amp;</span><span class="n">t</span><span class="p">)</span> <span class="p">;</span>
 
-<span class="n">template</span><span class="o">&lt;</span><span class="k">class</span> <span class="nc">T</span><span class="o">&gt;</span> <span class="n">operator</span> <span class="n">T</span><span class="p">()</span> <span class="n">const</span> <span class="n">throw</span> <span class="p">(</span><span class="n">UnassignableTypeException</span><span class="p">);</span>
+<span class="n">template</span><span class="o">&lt;</span><span class="k">class</span> <span class="nc">T</span><span class="o">&gt;</span> <span class="n">operator</span> <span class="n">T</span><span class="p">()</span> <span class="n">const</span> <span class="p">;</span>
 </pre></div>
 </div>
 <p>Internally, contained GUI entries, such as a slider value, are
@@ -2402,7 +2402,7 @@ arbitrary quadrangle in an image.</p>
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2006-2017, Christof Elbrechter, Michael Goetting, Robert Haschke.
+        &#169; Copyright 2006-2019, Christof Elbrechter, Michael Götting, Robert Haschke, Alexander Neumann.
       Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.0.1.
     </div>
   </body>

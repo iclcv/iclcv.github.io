@@ -20,7 +20,7 @@ var searchData=
   ['opennimapgenerator',['OpenNIMapGenerator',['../classicl_1_1io_1_1icl__openni_1_1OpenNIMapGenerator.html',1,'icl::io::icl_openni']]],
   ['opennirgbgenerator',['OpenNIRgbGenerator',['../classicl_1_1io_1_1icl__openni_1_1OpenNIRgbGenerator.html',1,'icl::io::icl_openni']]],
   ['oproihandler',['OpROIHandler',['../classicl_1_1filter_1_1OpROIHandler.html',1,'icl::filter']]],
-  ['options',['Options',['../classicl_1_1qt_1_1DefineRectanglesMouseHandler_1_1Options.html',1,'icl::qt::DefineRectanglesMouseHandler::Options'],['../structicl_1_1qt_1_1GUIComponent_1_1Options.html',1,'icl::qt::GUIComponent::Options']]],
+  ['options',['Options',['../structicl_1_1qt_1_1GUIComponent_1_1Options.html',1,'icl::qt::GUIComponent::Options'],['../classicl_1_1qt_1_1DefineRectanglesMouseHandler_1_1Options.html',1,'icl::qt::DefineRectanglesMouseHandler::Options']]],
   ['optrisgrabber',['OptrisGrabber',['../classicl_1_1io_1_1OptrisGrabber.html',1,'icl::io']]],
   ['orbfeaturedetector',['ORBFeatureDetector',['../classicl_1_1cv_1_1ORBFeatureDetector.html',1,'icl::cv']]]
 ];

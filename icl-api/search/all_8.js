@@ -10,7 +10,7 @@ var searchData=
   ['gauss_5fradius',['gauss_radius',['../classicl_1_1cv_1_1CornerDetectorCSS.html#a0c5b9ae7776f12c07adb24cf3bf92acf',1,'icl::cv::CornerDetectorCSS']]],
   ['gaussian',['gaussian',['../classicl_1_1cv_1_1CornerDetectorCSS.html#a9c2eb65d3147a489e306beda69b1ca7f',1,'icl::cv::CornerDetectorCSS::gaussian()'],['../classicl_1_1cv_1_1opensurf_1_1Surf.html#acce2bed398fe8015e4b0eb2333bcc167',1,'icl::cv::opensurf::Surf::gaussian(int x, int y, float sig)'],['../classicl_1_1cv_1_1opensurf_1_1Surf.html#a45019c6ae505f908ff323ac62727eb69',1,'icl::cv::opensurf::Surf::gaussian(float x, float y, float sig)']]],
   ['gaussiankernel',['GaussianKernel',['../structicl_1_1cv_1_1CornerDetectorCSS_1_1GaussianKernel.html',1,'icl::cv::CornerDetectorCSS::GaussianKernel'],['../structicl_1_1cv_1_1CornerDetectorCSS_1_1GaussianKernel.html#a77ffece470c52237450a661b1fdaf161',1,'icl::cv::CornerDetectorCSS::GaussianKernel::GaussianKernel()']]],
-  ['gaussrandom',['gaussRandom',['../group__RANDOM.html#ga9cd5c572f28873aaaddd13692c099465',1,'icl::utils::gaussRandom(double mean, double var)'],['../group__RANDOM.html#ga2fd21725893b78f862cce6a2300f7420',1,'icl::utils::gaussRandom(double mean, double var, const Range&lt; double &gt; &amp;range)']]],
+  ['gaussrandom',['gaussRandom',['../namespaceicl_1_1utils.html#a9cd5c572f28873aaaddd13692c099465',1,'icl::utils::gaussRandom(double mean, double var)'],['../namespaceicl_1_1utils.html#a2fd21725893b78f862cce6a2300f7420',1,'icl::utils::gaussRandom(double mean, double var, const Range&lt; double &gt; &amp;range)']]],
   ['general_20utility_20and_20support_20functions',['General Utility and Support Functions',['../group__GENERAL.html',1,'']]],
   ['generate',['generate',['../structicl_1_1markers_1_1MarkerCodeICL1.html#a95e5a009a12759ff01194f83278aa473',1,'icl::markers::MarkerCodeICL1']]],
   ['generateepanechnikov',['generateEpanechnikov',['../classicl_1_1cv_1_1MeanShiftTracker.html#af4f71fdfe2e985f0eef9c308dffb1e84',1,'icl::cv::MeanShiftTracker']]],
@@ -785,6 +785,5 @@ var searchData=
   ['guiwidget',['GUIWidget',['../classicl_1_1qt_1_1GUIWidget.html',1,'icl::qt::GUIWidget'],['../classicl_1_1qt_1_1GUIWidget.html#a19a4b915037268b2c9950aff057b2f28',1,'icl::qt::GUIWidget::GUIWidget()']]],
   ['guiwidget_2eh',['GUIWidget.h',['../GUIWidget_8h.html',1,'']]],
   ['grabbers_20for_20movie_20file_20sources',['grabbers for movie file sources',['../group__MOVIE__FILE__G.html',1,'']]],
-  ['pointcloudobjectbase',['PointCloudObjectBase',['../structicl_1_1core_1_1DataSegmentBase.html#af51c3c793d8ad243baf13b953e5b7faf',1,'icl::core::DataSegmentBase']]],
-  ['general_20purpose_20utiltiy_20classes_20and_20functions',['General purpose Utiltiy Classes and Functions',['../group__UTILS.html',1,'']]]
+  ['pointcloudobjectbase',['PointCloudObjectBase',['../structicl_1_1core_1_1DataSegmentBase.html#af51c3c793d8ad243baf13b953e5b7faf',1,'icl::core::DataSegmentBase']]]
 ];

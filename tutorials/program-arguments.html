@@ -585,7 +585,7 @@ arguments</p></li>
 human-readable error messages</p></li>
 <li><p>an automatically supported set of common default program arguments,
 such as <strong>-version</strong> or <strong>-help</strong></p></li>
-<li><p>a concise method <a class="reference external" href="../icl-api/group__PA.html#gac1c1a1e771ecc0681b8f277040cc2c99">pa</a> that can be use to query whether a
+<li><p>a concise method <a class="reference external" href="../icl-api/namespaceicl_1_1utils.html#ac1c1a1e771ecc0681b8f277040cc2c99">pa</a> that can be use to query whether a
 specific program argument has been given and what it’s sub arguments
 where</p></li>
 </ul>
@@ -614,7 +614,7 @@ defined ones. Furthermore, arguments can be mandatory or optional.</p>
 <p class="admonition-title">Note</p>
 <p>The support for dangling arguments must be enabled explicitly by
 adding a boolean flag to the call to the program argument
-initialization function <a class="reference external" href="../icl-api/group__PA.html#gade3aca94cda923d51cae6dbc51384d52">pa_init</a>. Since it turned out that
+initialization function <a class="reference external" href="../icl-api/namespaceicl_1_1utils.html#ade3aca94cda923d51cae6dbc51384d52">pa_init</a>. Since it turned out that
 usually applications have no <em>dangling</em> arguments, this feature is
 deactivated by default in order to avoid that erroneously given
 program arguments are not detected because they are interpreted as
@@ -623,12 +623,12 @@ dangling arguments.</p>
 </div>
 <div class="section" id="defining-allowed-program-arguments">
 <h2>Defining allowed program arguments<a class="headerlink" href="#defining-allowed-program-arguments" title="Permalink to this headline">¶</a></h2>
-<p>Program arguments are defined by using the <a class="reference external" href="../icl-api/group__PA.html#gade3aca94cda923d51cae6dbc51384d52">pa_init</a>
+<p>Program arguments are defined by using the <a class="reference external" href="../icl-api/namespaceicl_1_1utils.html#ade3aca94cda923d51cae6dbc51384d52">pa_init</a>
 function. Usually, this function must not be called explicitly because
 it is called indirectly by the <a class="reference external" href="../icl-api/classicl_1_1qt_1_1ICLApplication.html">ICLApplication</a> (or short:
 <a class="reference external" href="../icl-api/namespaceicl_1_1qt.html#a88710c0c58ee1df2517ef4b57894d05d">ICLApp</a>) constructor. Actually the parameters are simply passed
-to <a class="reference external" href="../icl-api/group__PA.html#gade3aca94cda923d51cae6dbc51384d52">pa_init</a> if an <a class="reference external" href="../icl-api/namespaceicl_1_1qt.html#a88710c0c58ee1df2517ef4b57894d05d">ICLApp</a> is used.</p>
-<p><a class="reference external" href="../icl-api/group__PA.html#gade3aca94cda923d51cae6dbc51384d52">pa_init</a> always receives the main function’s program argument and
+to <a class="reference external" href="../icl-api/namespaceicl_1_1utils.html#ade3aca94cda923d51cae6dbc51384d52">pa_init</a> if an <a class="reference external" href="../icl-api/namespaceicl_1_1qt.html#a88710c0c58ee1df2517ef4b57894d05d">ICLApp</a> is used.</p>
+<p><a class="reference external" href="../icl-api/namespaceicl_1_1utils.html#ade3aca94cda923d51cae6dbc51384d52">pa_init</a> always receives the main function’s program argument and
 count and a single definition string:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">int</span> <span class="n">main</span><span class="p">(</span><span class="nb">int</span> <span class="n">n</span><span class="p">,</span> <span class="n">char</span> <span class="o">**</span><span class="n">args</span><span class="p">){</span>
   <span class="n">pa_init</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">args</span><span class="p">,</span><span class="n">definition</span> <span class="n">string</span><span class="p">);</span>
@@ -727,7 +727,7 @@ sub-arguments – cannot be set to mandatory.</p>
 </div>
 <div class="section" id="accessing-program-arguments">
 <h2>Accessing Program Arguments<a class="headerlink" href="#accessing-program-arguments" title="Permalink to this headline">¶</a></h2>
-<p>Given program arguments can be retrieved using the <a class="reference external" href="../icl-api/group__PA.html#gac1c1a1e771ecc0681b8f277040cc2c99">pa</a> function
+<p>Given program arguments can be retrieved using the <a class="reference external" href="../icl-api/namespaceicl_1_1utils.html#ac1c1a1e771ecc0681b8f277040cc2c99">pa</a> function
 that returns an instance of <a class="reference external" href="../icl-api/classicl_1_1utils_1_1ProgArg.html">ProgArg</a>, however <a class="reference external" href="../icl-api/classicl_1_1utils_1_1ProgArg.html">ProgArg</a>
 instances is most of the time not used explicitly. Instead, the
 <a class="reference external" href="../icl-api/classicl_1_1utils_1_1ProgArg.html">ProgArg</a> type provides many useful operators that allows for
@@ -907,9 +907,9 @@ purposes. <strong>-help</strong> gives a formatted <em>usage</em> output, in thi
 </div>
 <p><strong>-version</strong> provides current version and license information. If
 an application has some special license, the license text can be
-set using the <a class="reference external" href="../icl-api/group__PA.html#gacfdab0a33af75906c566f5319254989d">pa_set_license</a> function.
+set using the <a class="reference external" href="../icl-api/namespaceicl_1_1utils.html#acfdab0a33af75906c566f5319254989d">pa_set_license</a> function.
 Optionally the usage information can be explained using an extra help
-text that can be set using the <a class="reference external" href="../icl-api/group__PA.html#gabd26fa1dc3b675e9ce15fbd4b146ef2a">pa_set_help_text</a> function.
+text that can be set using the <a class="reference external" href="../icl-api/namespaceicl_1_1utils.html#abd26fa1dc3b675e9ce15fbd4b146ef2a">pa_set_help_text</a> function.
 A valid (and quite complex) program call could look like:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">example</span> <span class="n">a</span> <span class="n">b</span> <span class="n">c</span> <span class="o">-</span><span class="n">size</span> <span class="n">SVGA</span> <span class="n">d</span> <span class="n">e</span> <span class="o">-</span><span class="n">index</span> <span class="mi">7</span> <span class="o">-</span><span class="n">i</span> <span class="n">dc</span> <span class="mi">0</span> <span class="o">-</span><span class="n">files</span> <span class="o">*.</span><span class="n">cpp</span>
 </pre></div>
@@ -925,11 +925,11 @@ the current directory).</p>
 <div class="section" id="adding-more-descriptions">
 <h2>Adding more Descriptions<a class="headerlink" href="#adding-more-descriptions" title="Permalink to this headline">¶</a></h2>
 <p>In some cases, some or all given program arguments need an extra
-description. This can be given using the <a class="reference external" href="../icl-api/group__PA.html#gaa46ed3e5fd9ea82a1a91f9c6a43690dd">pa_explain</a> function.</p>
+description. This can be given using the <a class="reference external" href="../icl-api/namespaceicl_1_1utils.html#aa46ed3e5fd9ea82a1a91f9c6a43690dd">pa_explain</a> function.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>It is very important that <a class="reference external" href="../icl-api/group__PA.html#gaa46ed3e5fd9ea82a1a91f9c6a43690dd">pa_explain</a> is called <strong>before</strong>
-<a class="reference external" href="../icl-api/group__PA.html#gade3aca94cda923d51cae6dbc51384d52">pa_init</a> is invoked. Later calls to  <a class="reference external" href="../icl-api/group__PA.html#gaa46ed3e5fd9ea82a1a91f9c6a43690dd">pa_explain</a> have
+<p>It is very important that <a class="reference external" href="../icl-api/namespaceicl_1_1utils.html#aa46ed3e5fd9ea82a1a91f9c6a43690dd">pa_explain</a> is called <strong>before</strong>
+<a class="reference external" href="../icl-api/namespaceicl_1_1utils.html#ade3aca94cda923d51cae6dbc51384d52">pa_init</a> is invoked. Later calls to  <a class="reference external" href="../icl-api/namespaceicl_1_1utils.html#aa46ed3e5fd9ea82a1a91f9c6a43690dd">pa_explain</a> have
 no effect.</p>
 </div>
 <p>Calling the program</p>
@@ -1060,7 +1060,7 @@ no effect.</p>
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2006-2017, Christof Elbrechter, Michael Goetting, Robert Haschke.
+        &#169; Copyright 2006-2019, Christof Elbrechter, Michael Götting, Robert Haschke, Alexander Neumann.
       Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.0.1.
     </div>
   </body>

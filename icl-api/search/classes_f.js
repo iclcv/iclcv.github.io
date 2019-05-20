@@ -29,7 +29,7 @@ var searchData=
   ['plothandle3d',['PlotHandle3D',['../classicl_1_1geom_1_1PlotHandle3D.html',1,'icl::geom']]],
   ['plotwidget',['PlotWidget',['../classicl_1_1qt_1_1PlotWidget.html',1,'icl::qt']]],
   ['plotwidget3d',['PlotWidget3D',['../classicl_1_1geom_1_1PlotWidget3D.html',1,'icl::geom']]],
-  ['plugin',['Plugin',['../classicl_1_1filter_1_1LUTOp3Channel_1_1Plugin.html',1,'icl::filter::LUTOp3Channel&lt; T &gt;::Plugin'],['../structicl_1_1utils_1_1PluginRegister_1_1Plugin.html',1,'icl::utils::PluginRegister&lt; T &gt;::Plugin']]],
+  ['plugin',['Plugin',['../structicl_1_1utils_1_1PluginRegister_1_1Plugin.html',1,'icl::utils::PluginRegister&lt; T &gt;::Plugin'],['../classicl_1_1filter_1_1LUTOp3Channel_1_1Plugin.html',1,'icl::filter::LUTOp3Channel&lt; T &gt;::Plugin']]],
   ['pluginregister',['PluginRegister',['../classicl_1_1utils_1_1PluginRegister.html',1,'icl::utils']]],
   ['point',['Point',['../classicl_1_1utils_1_1Point.html',1,'icl::utils']]],
   ['point32f',['Point32f',['../classicl_1_1utils_1_1Point32f.html',1,'icl::utils']]],

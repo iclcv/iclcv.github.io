@@ -574,25 +574,57 @@ jQuery(document).ready(function() {
 
 </style><div class="section" id="download-instructions">
 <span id="download"></span><h1>Download Instructions<a class="headerlink" href="#download-instructions" title="Permalink to this headline">¶</a></h1>
-<img alt="../_images/download.png" src="../_images/download.png" />
-<p>Right now, ICL can only be accessed via svn checkout. However, we plan
-to provide binary releases as debian packages soon. Please note that
-only <strong>Linux</strong> is supported yet.</p>
-<div class="section" id="svn-checkout-and-redmine">
-<h2>SVN Checkout and Redmine<a class="headerlink" href="#svn-checkout-and-redmine" title="Permalink to this headline">¶</a></h2>
-<p>Trunk: <strong>https://opensource.cit-ec.de/svn/icl/trunk</strong></p>
-<p>Latest stable: <strong>https://opensource.cit-ec.de/svn/icl/tags/8.2.0</strong></p>
-<p>See also the Project Redmine at <strong>http://opensource.cit-ec.de/projects/icl</strong></p>
+<div class="section" id="source-code">
+<h2>Source Code<a class="headerlink" href="#source-code" title="Permalink to this headline">¶</a></h2>
+<p>The ICL’s source code can be found on Github: <a class="reference external" href="https://github.com/iclcv/icl">iclcv/icl</a>.</p>
 </div>
-<div class="section" id="binary-releases">
-<h2>Binary Releases<a class="headerlink" href="#binary-releases" title="Permalink to this headline">¶</a></h2>
-<p>Comming  soon:</p>
-<p>Ubuntu Precise (32bit, 64bit)</p>
-<p>Ubuntu Quantal (32bit, 64bit)</p>
-<div class="admonition-todo admonition" id="index-0">
-<p class="admonition-title">Todo</p>
-<p>adapt download page and add links to the actual page</p>
+<div class="section" id="ubuntu-packages">
+<h2>Ubuntu Packages<a class="headerlink" href="#ubuntu-packages" title="Permalink to this headline">¶</a></h2>
+<p>Ubuntu packages can be obtained from the <a class="reference external" href="https://github.com/iclcv/icl/releases">Github releases</a>
+page or by using the <a class="reference external" href="(https://launchpad.net/~iclcv/+archive/ubuntu/icl">ICL PPA</a>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">add</span><span class="o">-</span><span class="n">apt</span><span class="o">-</span><span class="n">repository</span> <span class="n">ppa</span><span class="p">:</span><span class="n">iclcv</span><span class="o">/</span><span class="n">icl</span>
+<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">update</span>
+<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">icl</span><span class="o">-</span><span class="n">tools</span>
+</pre></div>
 </div>
+<p>The ICL build is divided into four packages:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">icl-core</span></code> - Image Component Library</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">icl-dev</span></code> - ICL headers and project creation tools</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">icl-doc</span></code> - ICL sphinx manual and api documentation</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">icl-tools</span></code> - ICL Applications</p></li>
+</ul>
+<p>Currently, we provide packages for the Ubuntu releases <code class="docutils literal notranslate"><span class="pre">trusty</span></code>,
+<code class="docutils literal notranslate"><span class="pre">xenial</span></code> and <code class="docutils literal notranslate"><span class="pre">artful</span></code>.
+The packages are built with <a class="reference external" href="http://pointclouds.org">PCL</a> features enabled.
+Users of <code class="docutils literal notranslate"><span class="pre">trusty</span></code> need to add a third party PPA to their system as described <a class="reference external" href="http://pointclouds.org/downloads/linux.html">here</a>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">add</span><span class="o">-</span><span class="n">apt</span><span class="o">-</span><span class="n">repository</span> <span class="n">ppa</span><span class="p">:</span><span class="n">v</span><span class="o">-</span><span class="n">launchpad</span><span class="o">-</span><span class="n">jochen</span><span class="o">-</span><span class="n">sprickerhof</span><span class="o">-</span><span class="n">de</span><span class="o">/</span><span class="n">pcl</span>
+<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">update</span>
+<span class="c1"># installing icl-core will automatically pull this dependency</span>
+<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libpcl</span><span class="o">-</span><span class="nb">all</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="homebrew-recipes">
+<h2>Homebrew Recipes<a class="headerlink" href="#homebrew-recipes" title="Permalink to this headline">¶</a></h2>
+<p>We provide <a class="reference external" href="https://brew.sh/index_de.html">Homebrew</a> recipes which can be used
+to install ICL in three different flavours:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># has to be done just once
+$ brew tap iclcv/homebrew-formulas
+# enables features of OpenCV, Qt, OpenGL, ImageMagick, LibAV, LibDC and LibEigen
+$ brew install icl
+# base features plus additional functionality based on rsb, protobuf, freenect, pcl and bullet
+$ brew install icl --with-extra
+# extra features plus libusb, zmq and openni support
+brew install icl --with-full
+</pre></div>
+</div>
+</div>
+<div class="section" id="windows-installers">
+<h2>Windows Installers<a class="headerlink" href="#windows-installers" title="Permalink to this headline">¶</a></h2>
+<p>Windows MSI installers for Win32 or Win64 can be downloaded from <a class="reference external" href="https://github.com/iclcv/icl/releases">Github releases</a> or from the <a class="reference external" href="https://ci.appveyor.com/project/aleneum/icl">AppVeyor CI-Servers</a>.
+Users to have to install 3rd-party dependencies (pthreads-win32, Qt5, Visual Studio Redistributables)
+to work with the contained binaries.</p>
 </div>
 </div>
 
@@ -608,8 +640,10 @@ only <strong>Linux</strong> is supported yet.</p>
   <h3><a href="../index.html">Table of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Download Instructions</a><ul>
-<li><a class="reference internal" href="#svn-checkout-and-redmine">SVN Checkout and Redmine</a></li>
-<li><a class="reference internal" href="#binary-releases">Binary Releases</a></li>
+<li><a class="reference internal" href="#source-code">Source Code</a></li>
+<li><a class="reference internal" href="#ubuntu-packages">Ubuntu Packages</a></li>
+<li><a class="reference internal" href="#homebrew-recipes">Homebrew Recipes</a></li>
+<li><a class="reference internal" href="#windows-installers">Windows Installers</a></li>
 </ul>
 </li>
 </ul>
@@ -650,7 +684,7 @@ only <strong>Linux</strong> is supported yet.</p>
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2006-2017, Christof Elbrechter, Michael Goetting, Robert Haschke.
+        &#169; Copyright 2006-2019, Christof Elbrechter, Michael Götting, Robert Haschke, Alexander Neumann.
       Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.0.1.
     </div>
   </body>
